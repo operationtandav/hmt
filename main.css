@@ -1,0 +1,23 @@
+html { 
+    /* background: url('./files/snow-background.jpg') no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000000;
+}
+
+body {
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-x: hidden;
+	overflow-y: hidden!important;
+    position: absolute;
+    width: 100%
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.6), rgba(0, 0, 0, 0));
+}
