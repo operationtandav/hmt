@@ -11,7 +11,7 @@ body {
     text-align: justify;
     text-justify: inter-word;
     overflow-x: hidden;
-	overflow-y: hidden!important;
+	/* overflow-y: hidden!important; */
     position: absolute;
     /* width: 100%; */
     margin: 10px;
