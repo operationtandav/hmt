@@ -54,7 +54,7 @@
             <li>An equation for conservation of mass, called the equation of continuity</li>
             <li>Equation for conservation of each component of momentum</li>
         </ul>
-        In one dimensional system, we have one momemntum equation. In 3 dimensional system, we have 3 momentum equations. So in general for 3 dimensional system, we have one continutiy equation and three momentum equations for each of three directions, viz., x, y and z. <br/>
+        In one dimensional system, we have one momemntum equation. In 3 dimensional system, we have 3 momentum equations. So in general for 3 dimensional system, we have one continutiy equation and three momentum equations for each of three directions, viz., x, y and z. <br/> <br/>
         The Navier Stokes Equation <br/>
         We will look at situations whic are staedy state, constant property, incompressible, laminar, and two-dimensional. <br/>
         Two dimensional means any property (say pressure or velocity components) will vary only in two direction ($x$ and $y$ or $r$ and \(\theta\) or $r$ and $z$)<br/>
@@ -66,7 +66,18 @@
         \[ - \frac{\partial p}{\partial x} + \mu[\frac{\partial^2 V_x}{\partial x^2}+ \frac{\partial^2 V_x}{\partial y^2}] = \rho[V_x \frac{\partial V_x}{\partial x}+ V_y \frac{\partial V_x}{\partial y}]\]
         \[ - \frac{\partial p}{\partial y} + \mu [\frac{\partial^2 V_y}{\partial x^2}+ \frac{\partial^2 V_y}{\partial y^2}] = \rho[V_x \frac{\partial V_y}{\partial x}+ V_y \frac{\partial V_y}{\partial y}]\]
 
-        
+        Left side of the equation represents net force acting on the element of the fliud. Right handside of the equation repreesents net outflow of momentum from that small element. Since nothing changes with time, there is no element like \(\frac{dV_x}{dt}\) in the equation.
+        The first part of left equation represents the force because of the variation in pressure in the x direction. The second term represen ts the net viscous force. <br/>
+        Navier Stokes Equation in Cylindrical Polar Coordinates:
+        In the cylindrical polar coordinates if \(V_\theta = 0\) (no swirl) everywhere and \(V_r\) and \(V_z\) are not functions of \(\theta\), we have: <br\> The continuity equation:
+        \[\frac{\partial V_r}{\partial r} + \frac{V_r}{r} + \frac{\partial V_z}{\partial z}\]
+        The \(r\)-direcion momentum equation:
+        \[\rho[V_r\frac{\partial V_r}{\partial r} + V_z\frac{\partial V_r}{\partial z}] = -\frac{\partial p}{\partial r}  + \mu[\frac{\partial^2 V_r}{\partial r^2} + \frac{1}{r}\frac{\partial V_r}{\partial r} - \frac{V_r}{r^2} + \frac{\partial^2 V_r}{ \partial z^2}]\]
+        The \(z\)-direcion momentum equation:
+        \[\rho[V_r\frac{\partial V_z}{\partial r} + V_z\frac{\partial V_z}{\partial z}] = -\frac{\partial p}{\partial z}  + \mu[\frac{\partial^2 V_z}{\partial r^2} + \frac{1}{r}\frac{\partial V_z}{\partial r} + \frac{\partial^2 V_r}{ \partial z^2}]\]
+
+        The equation is having same structure as we had in cartesian equation, to solve for \(V_r\), \(V_\theta\) and \(V_p\)
+
     </main>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
