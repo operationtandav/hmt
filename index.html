@@ -2,105 +2,141 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Heat & Mass Transfer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script type="text/x-mathjax-config">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Heat & Mass Transfer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       extensions: ["tex2jax.js"],
       jax: ["input/TeX","output/HTML-CSS"],
       tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
     });
   </script>
-    <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
 
   </script>
-    <script type="text/javascript" src="js/MathJax.js"></script>
+  <script type="text/javascript" src="js/MathJax.js"></script>
 </head>
 
 <body id="mainbody">
-    <header>
-        <h1>\(Heat\ and\ Mass\ Transfer\)</h1>
-    </header>
-    <hr />
-    <main>
-        <h3>\(Review\ of\ Fluid\ Mechanics\ -\ 1\)</h3>
-        The need to review Fluid Mechanics:
-        <ul>
-            <li>Convection is heat transfer in the presence of fluid flow.</li>
-            <li>Fluid Flow affects heat transfer.</li>
-            <li>We need to detrmine pressure drop or drag force in a situation of convection heat transfer</li>
-        </ul>
-        We are expected to be familiar width:
-        <ul>
-            <li>Governing Equations of fluid flow</li>
-            <li>Determination of pressure drop when a fluid flows in a duct(internal flow).</li>
-            <li>Determination of drag force when fluid flows around a body immersed in it (external flow).</li>
-            <li>Laminar and turbulent flow</li>
-        </ul>
-        Governing Equations of Fluid Flow <br/>
-        These equations represent
-        <ul>
-            <li>Conservation of mass</li>
-            <li>Conservation of momentum (Newton's second law of motion)</li>
-        </ul>
-        Also conservation of mass and momentum themselves are not sufficient to solve fluid problems, and we need subsidiary relations to solve these problems. So we use Stokes relation between stress and rate of strain. Notable point is that when we talk about Stokes equation, we restrict ourselves to the Netwonian fluid.
-        The resulting equations are known as Navier-Stokes equations. These consist of 
-        <ul>
-            <li>An equation for conservation of mass, called the equation of continuity</li>
-            <li>Equation for conservation of each component of momentum</li>
-        </ul>
-        In one dimensional system, we have one momemntum equation. In 3 dimensional system, we have 3 momentum equations. So in general for 3 dimensional system, we have one continutiy equation and three momentum equations for each of three directions, viz., x, y and z. <br/> <br/>
-        The Navier Stokes Equation <br/>
-        We will look at situations whic are staedy state, constant property, incompressible, laminar, and two-dimensional. <br/>
-        Two dimensional means any property (say pressure or velocity components) will vary only in two direction ($x$ and $y$ or $r$ and \(\theta\) or $r$ and $z$)<br/>
-        Steady ste means nothing changes with time.
-        Constant property means property like dessity viscosity etc are not functions of temperature. <br/>
-        Incompressible means there is no link between density and pressure.
-        In a cartesian coordinate system, we have a continuity equation: <br/> \[ \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} = 0 \]
-        And two momentum equations:
-        \[ - \frac{\partial p}{\partial x} + \mu[\frac{\partial^2 V_x}{\partial x^2}+ \frac{\partial^2 V_x}{\partial y^2}] = \rho[V_x \frac{\partial V_x}{\partial x}+ V_y \frac{\partial V_x}{\partial y}]\]
-        \[ - \frac{\partial p}{\partial y} + \mu [\frac{\partial^2 V_y}{\partial x^2}+ \frac{\partial^2 V_y}{\partial y^2}] = \rho[V_x \frac{\partial V_y}{\partial x}+ V_y \frac{\partial V_y}{\partial y}]\]
+  <header>
+    <h1>\(Heat\ and\ Mass\ Transfer\)</h1>
+  </header>
+  <hr />
+  <main>
+    <h3>\(Review\ of\ Fluid\ Mechanics\ -\ 1\)</h3>
+    The need to review Fluid Mechanics:
+    <ul>
+      <li>Convection is heat transfer in the presence of fluid flow.</li>
+      <li>Fluid Flow affects heat transfer.</li>
+      <li>We need to detrmine pressure drop or drag force in a situation of convection heat transfer</li>
+    </ul>
+    We are expected to be familiar width:
+    <ul>
+      <li>Governing Equations of fluid flow</li>
+      <li>Determination of pressure drop when a fluid flows in a duct(internal flow).</li>
+      <li>Determination of drag force when fluid flows around a body immersed in it (external flow).</li>
+      <li>Laminar and turbulent flow</li>
+    </ul>
+    Governing Equations of Fluid Flow <br />
+    These equations represent
+    <ul>
+      <li>Conservation of mass</li>
+      <li>Conservation of momentum (Newton's second law of motion)</li>
+    </ul>
+    Also conservation of mass and momentum themselves are not sufficient to solve fluid problems, and we need subsidiary
+    relations to solve these problems. So we use Stokes relation between stress and rate of strain. Notable point is
+    that when we talk about Stokes equation, we restrict ourselves to the Netwonian fluid.
+    The resulting equations are known as Navier-Stokes equations. These consist of
+    <ul>
+      <li>An equation for conservation of mass, called the equation of continuity</li>
+      <li>Equation for conservation of each component of momentum</li>
+    </ul>
+    In one dimensional system, we have one momemntum equation. In 3 dimensional system, we have 3 momentum equations. So
+    in general for 3 dimensional system, we have one continutiy equation and three momentum equations for each of three
+    directions, viz., x, y and z. <br /> <br />
+    The Navier Stokes Equation <br />
+    We will look at situations whic are staedy state, constant property, incompressible, laminar, and two-dimensional.
+    <br />
+    Two dimensional means any property (say pressure or velocity components) will vary only in two direction ($x$ and
+    $y$ or $r$ and \(\theta\) or $r$ and $z$)<br />
+    Steady ste means nothing changes with time.
+    Constant property means property like dessity viscosity etc are not functions of temperature. <br />
+    Incompressible means there is no link between density and pressure.
+    In a cartesian coordinate system, we have a continuity equation: <br /> \[ \frac{\partial V_x}{\partial x} +
+    \frac{\partial V_y}{\partial y} = 0 \]
+    And two momentum equations:
+    \[ - \frac{\partial p}{\partial x} + \mu[\frac{\partial^2 V_x}{\partial x^2}+ \frac{\partial^2 V_x}{\partial y^2}] =
+    \rho[V_x \frac{\partial V_x}{\partial x}+ V_y \frac{\partial V_x}{\partial y}]\]
+    \[ - \frac{\partial p}{\partial y} + \mu [\frac{\partial^2 V_y}{\partial x^2}+ \frac{\partial^2 V_y}{\partial y^2}]
+    = \rho[V_x \frac{\partial V_y}{\partial x}+ V_y \frac{\partial V_y}{\partial y}]\]
 
-        Left side of the equation represents net force acting on the element of the fliud. Right handside of the equation repreesents net outflow of momentum from that small element. Since nothing changes with time, there is no element like \(\frac{dV_x}{dt}\) in the equation.
-        The first part of left equation represents the force because of the variation in pressure in the x direction. The second term represen ts the net viscous force. <br/>
-        Navier Stokes Equation in Cylindrical Polar Coordinates:
-        In the cylindrical polar coordinates if \(V_\theta = 0\) (no swirl) everywhere and \(V_r\) and \(V_z\) are not functions of \(\theta\), we have: <br\> The continuity equation:
-        \[\frac{\partial V_r}{\partial r} + \frac{V_r}{r} + \frac{\partial V_z}{\partial z}\]
-        The \(r\)-direcion momentum equation:
-        \[\rho[V_r\frac{\partial V_r}{\partial r} + V_z\frac{\partial V_r}{\partial z}] = -\frac{\partial p}{\partial r}  + \mu[\frac{\partial^2 V_r}{\partial r^2} + \frac{1}{r}\frac{\partial V_r}{\partial r} - \frac{V_r}{r^2} + \frac{\partial^2 V_r}{ \partial z^2}]\]
-        The \(z\)-direcion momentum equation:
-        \[\rho[V_r\frac{\partial V_z}{\partial r} + V_z\frac{\partial V_z}{\partial z}] = -\frac{\partial p}{\partial z}  + \mu[\frac{\partial^2 V_z}{\partial r^2} + \frac{1}{r}\frac{\partial V_z}{\partial r} + \frac{\partial^2 V_r}{ \partial z^2}]\]
+    Left side of the equation represents net force acting on the element of the fliud. Right handside of the equation
+    repreesents net outflow of momentum from that small element. Since nothing changes with time, there is no element
+    like \(\frac{dV_x}{dt}\) in the equation.
+    The first part of left equation represents the force because of the variation in pressure in the x direction. The
+    second term represen ts the net viscous force. <br />
+    Navier Stokes Equation in Cylindrical Polar Coordinates:
+    In the cylindrical polar coordinates if \(V_\theta = 0\) (no swirl) everywhere and \(V_r\) and \(V_z\) are not
+    functions of \(\theta\), we have: <br\> The continuity equation:
+      \[\frac{\partial V_r}{\partial r} + \frac{V_r}{r} + \frac{\partial V_z}{\partial z}\]
+      The \(r\)-direcion momentum equation:
+      \[\rho[V_r\frac{\partial V_r}{\partial r} + V_z\frac{\partial V_r}{\partial z}] = -\frac{\partial p}{\partial r} +
+      \mu[\frac{\partial^2 V_r}{\partial r^2} + \frac{1}{r}\frac{\partial V_r}{\partial r} - \frac{V_r}{r^2} +
+      \frac{\partial^2 V_r}{ \partial z^2}]\]
+      The \(z\)-direcion momentum equation:
+      \[\rho[V_r\frac{\partial V_z}{\partial r} + V_z\frac{\partial V_z}{\partial z}] = -\frac{\partial p}{\partial z} +
+      \mu[\frac{\partial^2 V_z}{\partial r^2} + \frac{1}{r}\frac{\partial V_z}{\partial r} + \frac{\partial^2 V_r}{
+      \partial z^2}]\]
 
-        The equation is having same structure as we had in cartesian equation, to solve for \(V_r\), \(V_{\theta}\) and \(p\) like we have \(V_x\), \(V_y\) and \(p\) for cartesian coordinates. <br/>
-        The Navier-Stokes Equations (contd.)
-        <ul>
-          <li>The equations are not easy to solve.</li>
-          <li>Solutions can be obtained only for some simple situations (e.g. for fully developed laminar flow in a circular pipe).</li>
-          <li>In a large number of situations, we generally depend upon correlations based on experimental data. Data is collected, correlated in terms of dimesionless variables.</li>
-        </ul>
+      The equation is having same structure as we had in cartesian equation, to solve for \(V_r\), \(V_{\theta}\) and
+      \(p\) like we have \(V_x\), \(V_y\) and \(p\) for cartesian coordinates. <br />
+      The Navier-Stokes Equations (contd.)
+      <ul>
+        <li>The equations are not easy to solve.</li>
+        <li>Solutions can be obtained only for some simple situations (e.g. for fully developed laminar flow in a
+          circular pipe).</li>
+        <li>In a large number of situations, we generally depend upon correlations based on experimental data. Data is
+          collected, correlated in terms of dimesionless variables.</li>
+      </ul>
 
-        <h4>Internal Flow</h4>
-        <h5>Flow through a Duct</h5>
-        \[\Delta p = F (\bar V,\ L,\ fluid\ properties,\ geometry)\]
-        Fluid properties include density \(\rho\), viscosity \(\mu\), and sometimes kinematic viscosity \(\nu\).
-        Consider a tube of length \(L\) through  which mass \(\dot m\) flows with mean velocity \(\bar V\) with inlet and exit pressures as \(p_i\) and \(p_e\) respectively. Because of the viscous action of the ffluid there will be a pressure drop \(\Delta p\) and \(p_e\) will be  lower than \(p_i\). 
-        \[\Delta p = p_i - p_e\]
+      <h4>Internal Flow</h4>
+      <h5>Flow through a Duct</h5>
+      \[\Delta p = F (\bar V,\ L,\ fluid\ properties,\ geometry)\]
+      Fluid properties include density \(\rho\), viscosity \(\mu\), and sometimes kinematic viscosity \(\nu\).
+      Consider a tube of length \(L\) through which mass \(\dot m\) flows with mean velocity \(\bar V\) with inlet and
+      exit pressures as \(p_i\) and \(p_e\) respectively. Because of the viscous action of the ffluid there will be a
+      pressure drop \(\Delta p\) and \(p_e\) will be lower than \(p_i\).
+      \[\Delta p = p_i - p_e\]
+      The duct may be uniform, viz., circular, square, and some irregular shape like oval. <br />
+      The fluid mechanics problem is here to determine pressu drop as function of vrlovity, length, fluid properties and
+      geometry of the system<br />
+      At the gross level we will be interested in pressure drop, but beause of ther viscous action, there will be a
+      shear force acting on the wall \(\tau_{w}\). In fact we can relate the shear force with pressure drop with some
+      geometric relations.
+      <h5>The Friction Factor</h5>
+      The relation for pressure drop is expressedd in terms of the friction factor \(f\).
+      \[f = \frac{-(\frac{dp}{dz})A}{P(\frac{\rho \bar V^2}{2})} = \frac{\tau_w}{(\frac{\rho \bar V^2}{2})}\]
+      where <br/>
+      \(A\) is the cross-sectional are, and <br/>
+      \(P\) is the perimeter<br/>
+      <u>Note:</u> \(f\) is a dimensionless number<br/>
 
-    </main>
-    <script type="text/x-mathjax-config">
+
+  </main>
+  <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           extensions: ["tex2jax.js"],
           jax: ["input/TeX","output/HTML-CSS"],
           tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
         });
       </script>
-    <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
 
 </body>
 
