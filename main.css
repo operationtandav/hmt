@@ -28,3 +28,8 @@ hr {
 ul{
     list-style-type: circle;
 }
+
+img{
+    display: inline-block;
+    width: 100%;
+}

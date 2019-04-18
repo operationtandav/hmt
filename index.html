@@ -126,7 +126,21 @@
       \(A\) is the cross-sectional are, and <br/>
       \(P\) is the perimeter<br/>
       <u>Note:</u> \(f\) is a dimensionless number<br/>
-      \(\frac{\rho \bar V^2}{2}\) is sometimes called velocity head.
+      \(\frac{\rho {\bar V}^2}{2}\) is sometimes called velocity head.
+      For laminar, fully developed flow,
+      \[f = f(Re)\]
+      For turbulent, fully developed flow,
+      \[f(Re,(\frac{e}{D}))\]
+      where \(\frac{e}{D}\) is the roughness parameter (or relative roughness) for the inner wall of the duct.
+      <h5>Laminar Flow</h5>
+      In this case, an analytical solution can be ontained. We get,
+      \[\Delta P = \frac{32 \mu \bar V L}{D}\]
+      from which 
+      \[f = \frac{16}{Re_D}\]
+      Subscript \(D\) indicates that Reynolds number is based on diameter.
+      <h5>Turbulent Flow</h5>
+      <p>In this case, we have to depend on experimental data. It is put together in a log chart called moddy diagram. It is a relation between friction factor and Reynolds Number with roughness parameter as third parameter. <br/>
+      <img src="./files/Moody_diagram.jpg" alt="Moody Diagram" title="Moody Diagram"></p>
 
   </main>
   <script type="text/x-mathjax-config">
